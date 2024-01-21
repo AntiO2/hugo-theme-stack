@@ -1,1 +1,9 @@
 /* Place your custom SCSS in HUGO_SITE_FOLDER/assets/scss/custom.scss */
+
+.article-list--compact article .article-image img {
+    border-radius: var(--card-border-radius);
+}
+
+.section-image img {
+    border-radius: var(--card-border-radius);
+}
