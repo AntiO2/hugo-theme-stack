@@ -10,7 +10,12 @@ menu:
           params:
             icon: brand-github
             newTab: true
-
+        - identifier: mail
+          url: mailto:antio2@qq.com
+          weight: -97
+          params:
+            icon: mail
+            newTab: true
         - identifier: steam
           url: https://steamcommunity.com/id/AntiO2/
           weight: -99
@@ -18,12 +23,7 @@ menu:
             icon: brand-steam
             newTab: true
 
-        - identifier: mail
-          url: mailto:antio2@qq.com
-          weight: -97
-          params:
-            icon: mail
-            newTab: true
+
 
 params:
     mainSections:
@@ -115,7 +115,7 @@ params:
             categoryID: DIC_kwDOKDW2j84Cck6E
             mapping: pathname
             strict: 0
-            lightTheme: https://rea1shane.github.io/giscus-theme/light.css
+            lightTheme: https://cdn.jsdelivr.net/gh/AntiO2/giscus-theme@v0.1/light.css
             darkTheme: noborder_gray
             reactionsEnabled: 1
             emitMetadata: 0
