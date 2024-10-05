@@ -2,17 +2,50 @@ module:
     hugoVersion:
         extended: true
         min: "0.87.0"
+menu:
+    main:
+        - name: 开往
+          url: https://www.travellings.cn/go.html
+          weight: 100
+          params:
+            icon: train
+            newTab: true    
+
+    social:
+        - identifier: github
+          url: https://github.com/antio2
+          weight: -100
+          params:
+            icon: brand-github
+            newTab: true
+        - identifier: mail
+          url: mailto:antio2@qq.com
+          weight: -97
+          params:
+            icon: mail
+            newTab: true
+        - identifier: rss
+          url: /index.xml
+          weight: 6
+          params:
+            icon: rss
+            newTab: true
+
+
+
 
 params:
+    syntaxHighlighter: "highlight.js"
     mainSections:
-        - post
+        - blog
+        - tech
     featuredImageField: image
     rssFullContent: true
-    favicon:
+    favicon: /favicon.ico
 
     footer:
-        since:
-        customText:
+        since: 2017
+        customText: <a href="https://beian.miit.gov.cn/#/" target="_blank" rel="noopener">蜀ICP备2021028514号-2</a>
 
     dateFormat:
         published: Jan 02, 2006
@@ -20,25 +53,24 @@ params:
 
     sidebar:
         compact: false
-        emoji:
-        subtitle:
+        emoji: ☀️
+        subtitle: 笑的哭的错的对的终究结束了
         avatar:
             enabled: true
             local: true
             src: img/avatar.png
 
     article:
-        headingAnchor: false
-        math: false
+        math: true
         toc: true
         readingTime: true
         license:
-            enabled: false
+            enabled: true
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
-        enabled: false
-        provider: disqus
+        enabled: true
+        provider: giscus
 
         disqusjs:
             shortname:
@@ -51,12 +83,6 @@ params:
             repo:
             issueTerm: pathname
             label:
-
-        beaudar:
-            repo:
-            issueTerm: pathname
-            label:
-            theme:        
 
         remark42:
             host:
@@ -93,18 +119,18 @@ params:
             lang:
 
         giscus:
-            repo:
-            repoID:
-            category:
-            categoryID:
-            mapping:
-            strict:
-            lightTheme:
-            darkTheme:
+            repo: AntiO2/antio2.github.io
+            repoID: R_kgDOKDW2jw
+            category: Comment
+            categoryID: DIC_kwDOKDW2j84Cck6E
+            mapping: pathname
+            strict: 0
+            lightTheme: https://cdn.jsdelivr.net/gh/AntiO2/giscus-theme@v0.1/light.css
+            darkTheme: noborder_gray
             reactionsEnabled: 1
             emitMetadata: 0
-            inputPosition:
-            lang:
+            inputPosition: top
+            lang: zh-CN
 
         gitalk:
             owner:
@@ -118,8 +144,8 @@ params:
             id:
 
     widgets:
-        homepage: []
-        page: []
+        homepage: [{"type":"search"},{"type":"categories","params":{"limit":10}},{"type":"archives","params":{"limit":10}},{"type":"tag-cloud","params":{"limit":20}}]
+        page: [{"type":"toc"}]
 
     opengraph:
         twitter:
